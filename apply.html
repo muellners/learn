@@ -38,15 +38,15 @@
             <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Firstname"></div>
             <div class="form-group"><input class="form-control" type="text" name="lastname" placeholder="Lastname"></div>
             <div class="form-group">
-              <select class="form-control" name="field">
+              <select class="form-control" name="interested">
               <optgroup label="Which field you are intrested in?">
-                <option value="Climate Change" selected="">Climate Change</option>
-                <option value="Financial Applications">Financial Applications</option>
-                <option value="Data Privacy">Data Privacy</option>
-                <option value="Artificial Intelligence">Artificial Intelligence</option>
-                <option value="OSS">Open Source Practices</option>
-                <option value="WFH">Learning Work From Home</option>
-                <option value="Freelancing">Freelancing</option>
+                <option value="cc" selected="">Climate Change</option>
+                <option value="fa">Financial Applications</option>
+                <option value="dp">Data Privacy</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="oss">Open Source Practices</option>
+                <option value="wfh">Learning Work From Home</option>
+                <option value="free">Freelancing</option>
               </optgroup>
             </select>
             <div>
@@ -54,15 +54,22 @@
             <small
                 class="form-text text-muted">Enter date like 15/09/2020.</small>
                 <div class="form-group"><input class="form-control" type="date" name="start" required="" value="28/04/2020"></div>
-                <div class="form-group"><label class="text-left">Do you need a laptop, computer machine? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label><input name="machine" type="checkbox"></div>
-                <div class="form-group"><label>Do you have a formal degree? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
-                    <input name="degree" type="checkbox"></div>
-                <div class="form-group"><label>Do you need a job after the program? &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
-                  <input name="jobneeded" type="checkbox"></div>
-                <div class="form-group"><label>Profile or Resume?</label></div>
-                <div class="form-group"><input type="file"></div>
+                <div class="form-group">
+                  <label class="text-left">Do you need a laptop, computer machine?
+                   </label>
+                     <input class="float-right" name="machine[needed]" id="needed" type="checkbox">
+                   </div>
+                <div class="form-group">
+                  <label>Do you have a formal degree or education?
+                  </label>
+                    <input class="float-right" name="degree[have]" id="have" type="checkbox"></div>
+                <div class="form-group">
+                  <label>Do you need a job after the program?
+                  </label>
+                  <input class="float-right" name="job[needed]" id="needed" type="checkbox"></div>
                 <div class="form-group"><input class="form-control" type="number" placeholder="Your age"></div>
-                <div class="form-group"><label>Are you working somwhere?</label><input class="form-control" type="text" name="working" placeholder="Where are you working?"></div>
+                <div class="form-group"><label>Are you working somwhere?</label>
+                  <input class="form-control" type="text" name="working" placeholder="Where are you working?"></div>
                 <div class="form-group"><input class="form-control" type="tel" name="phone" placeholder="Your Telephone"></div>
                 <div class="form-group"><input class="form-control is-invalid" type="email" data-toggle="tooltip" data-bs-tooltip="" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
                 <div class="form-group"><textarea class="form-control" name="message" placeholder="Describe yourself in lowest possible words" rows="14"></textarea></div>
