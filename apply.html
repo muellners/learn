@@ -21,14 +21,18 @@
 </head>
 
 <body>
-
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-<script>
-  hbspt.forms.create({
-	portalId: "6592409",
-	formId: "b14f7ca3-30ea-4d7b-8eeb-84765dba942f"
-});
-</script>
+  <nav class="navbar navbar-light navbar-expand fixed-top bg-light navigation-clean">
+        <div class="container"><a class="navbar-brand" href="https://learn.muellners.org">Learn@Muellners</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary ml-auto" role="button" href="#">Apply</a></div>
+        </div>
+    </nav>
+    <div></div>
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters"></div>
+        </div>
+    </section>
+     <div class="contact-clean" id="apply"></div>
     <footer class="footer bg-light">
         <div class="container">
             <div class="row">
@@ -59,7 +63,15 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+    <script>
+      hbspt.forms.create({
+    	portalId: "6592409",
+    	formId: "b14f7ca3-30ea-4d7b-8eeb-84765dba942f",
+      target: "#apply",
+      cssClass: "contact-clean"
+    });
+    </script>
 </body>
 
 </html>
